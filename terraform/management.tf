@@ -6,9 +6,9 @@ module "management" {
 
   control_tower_parameters = {
     AccountEmail = "alessio.vintari+master@nttdata.com"
-    AccountName  = "management"
+    AccountName  = "aft-bootcamp-master"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "root"
+    ManagedOrganizationalUnit = "Root"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
     SSOUserEmail     = "do-not-use@example.com"
