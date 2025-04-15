@@ -8,7 +8,7 @@ module "logarchive" {
     AccountEmail = "alessio.vintari+log@nttdata.com"
     AccountName  = "Log Archive"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "Security (ou-d0ut-lsr73s3q)"
+    ManagedOrganizationalUnit = "Security"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
     SSOUserEmail     = "do-not-use@example.com"
