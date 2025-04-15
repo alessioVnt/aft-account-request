@@ -1,19 +1,19 @@
 # Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 #
-module "management" {
+module "aft" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "xxxxxxxx"
-    AccountName  = "management"
+    AccountEmail = "alessio.vintari+aft@nttdata.com"
+    AccountName  = "aft"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "root"
+    ManagedOrganizationalUnit = "Aft (ou-d0ut-sswe0ike)"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
-    SSOUserEmail     = "do-not-use@example.com"
-    SSOUserFirstName = "do-not-use"
-    SSOUserLastName  = "do-not-use"
+    SSOUserEmail     = "alessio.vintari+master@example.com"
+    SSOUserFirstName = "alessio"
+    SSOUserLastName  = "vintari"
   }
 
   account_tags = {
@@ -30,5 +30,5 @@ module "management" {
   custom_fields = {
   }
 
-  account_customizations_name = "management"
+  account_customizations_name = "aft"
 }
